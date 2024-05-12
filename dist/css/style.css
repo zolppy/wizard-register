@@ -103,6 +103,7 @@ html body button:hover {
   outline: none;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
+  color: #202124;
   width: 100%;
 }
 .app__input:focus {
@@ -119,6 +120,18 @@ html body button:hover {
 .app__radio {
   width: 20px;
   aspect-ratio: 1/1;
+}
+
+.app__textarea {
+  font-size: 1rem;
+  padding: 0.5em;
+  outline: none;
+  color: #202124;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.app__textarea:focus {
+  border-width: 2px;
+  border-color: #684382;
 }
 
 .app__button {
