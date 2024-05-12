@@ -5,6 +5,10 @@ $main-color: #684382;
 $text-color: #202124;
 $warning-text-color: #d93025;
 $border-radius: 8px;
+$border-color: rgba(
+  $color: #000,
+  $alpha: 0.2,
+);
 $box-shadow: 2px 5px 10px
   rgba(
     $color: #000,

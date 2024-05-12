@@ -1,0 +1,15 @@
+@import "../../base/variables.scss";
+
+.app__input {
+  border: none;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 0.4em;
+  outline: none;
+  font-family: $roboto-font;
+  font-size: 1rem;
+
+  &:focus {
+    border-bottom-width: 2px;
+    border-bottom-color: $main-color;
+  }
+}

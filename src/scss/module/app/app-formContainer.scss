@@ -1,6 +1,7 @@
 @import "../../base/variables.scss";
 
-.app__description-container {
+.app__form-container {
+  align-self: stretch;
   background-color: white;
   padding: 1em;
   border-radius: $border-radius;
@@ -8,5 +9,4 @@
   flex-direction: column;
   gap: 1em;
   box-shadow: $box-shadow;
-  position: relative;
 }

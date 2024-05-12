@@ -29,6 +29,7 @@ html body h1 {
 }
 html body p {
   line-height: 1.5;
+  text-align: justify;
 }
 html body a {
   text-decoration: none;
@@ -38,6 +39,10 @@ html body button {
 }
 html body button:hover {
   cursor: pointer;
+}
+
+.p-relative {
+  position: relative !important;
 }
 
 .app__container {
@@ -58,8 +63,23 @@ html body button:hover {
   border-radius: 8px;
 }
 
+.app__form-container {
+  align-self: stretch;
+  background-color: white;
+  padding: 1em;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 .app__title {
   font-size: 2rem;
+}
+
+.app__required-question {
+  color: #d93025;
 }
 
 .app__decoration {
@@ -72,19 +92,33 @@ html body button:hover {
   height: 0.6em;
 }
 
-.app__description-container {
-  background-color: white;
-  padding: 1em;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-  position: relative;
+.app__required-symbol {
+  color: #d93025;
 }
 
-.app__required-question {
-  color: #d93025;
+.app__input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 0.4em;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+.app__input:focus {
+  border-bottom-width: 2px;
+  border-bottom-color: #684382;
+}
+
+.app__button {
+  background-color: #684382;
+  align-self: flex-start;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.6em 1em;
+  transition: opacity 0.3s ease-in;
+}
+.app__button:hover {
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=style.css.map */

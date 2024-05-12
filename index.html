@@ -21,7 +21,7 @@
           title="flor roxa"
           class="app__header"
         />
-        <div class="app__description-container">
+        <div class="app__form-container p-relative">
           <h1 class="app__title">Formulário de Cadastro de Magos</h1>
           <p class="app__description">
             Bem-vindo ao nosso formulário de cadastro para magos! Este documento
@@ -35,13 +35,20 @@
           </p>
           <div class="app__decoration"></div>
         </div>
-        <div class="app__question-container">
+        <div class="app__form-container">
           <p class="app__question">
-            02 - De onde você extrai seu poder místico?
+            01 - Como você é conhecido no mundo místico (seu nome mágico)?
             <span class="app__required-symbol">*</span>
           </p>
-          <input type="text" class="app__input" />
+          <input
+            type="text"
+            class="app__input"
+            placeholder="Sua resposta"
+            required
+            maxlength="20"
+          />
         </div>
+        <button type="submit" class="app__button">Enviar</button>
       </form>
     </main>
   </body>

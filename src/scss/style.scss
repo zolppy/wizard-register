@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-// Ponho em ordem hierárquica depois
-
 @import "./base/base.scss";
 @import "./base/generics.scss";
 @import "./module/app/app-container.scss";
 @import "./module/app/app-header.scss";
+@import "./module/app/app-formContainer.scss";
 @import "./module/app/app-title.scss";
-@import "./module/app/app-decoration.scss";
-@import "./module/app/app-descriptionContainer.scss";
 @import "./module/app/app-requiredQuestion";
+@import "./module/app/app-decoration.scss";
+@import "./module/app/app-question";
+@import "./module/app/app-requiredSymbol";
+@import "./module/app/app-input";
+
+@import "./module/app/app-button";
