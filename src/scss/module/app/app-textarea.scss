@@ -1,0 +1,14 @@
+@import "../../base/variables.scss";
+
+.app__textarea {
+  font-size: 1rem;
+  padding: 0.5em;
+  outline: none;
+  color: $text-color;
+  border: 1px solid $border-color;
+
+  &:focus {
+    border-width: 2px;
+    border-color: $main-color;
+  }
+}
