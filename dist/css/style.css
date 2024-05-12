@@ -17,13 +17,18 @@ html body {
   font-variant: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1;
 }
 html body h1,
 html body a,
 html body p,
 html body span {
   font: inherit;
+}
+html body h1 {
+  line-height: 1.25;
+}
+html body p {
+  line-height: 1.5;
 }
 html body a {
   text-decoration: none;
@@ -51,6 +56,35 @@ html body button:hover {
   align-self: stretch;
   aspect-ratio: 4/1;
   border-radius: 8px;
+}
+
+.app__title {
+  font-size: 2rem;
+}
+
+.app__decoration {
+  position: absolute;
+  background-color: #684382;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 0.6em;
+}
+
+.app__description-container {
+  background-color: white;
+  padding: 1em;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.app__required-question {
+  color: #d93025;
 }
 
 /*# sourceMappingURL=style.css.map */

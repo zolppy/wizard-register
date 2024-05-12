@@ -18,13 +18,20 @@ html {
     font-variant: normal;
     font-weight: 400;
     letter-spacing: 0;
-    line-height: 1;
 
     h1,
     a,
     p,
     span {
       font: inherit;
+    }
+
+    h1 {
+      line-height: 1.25;
+    }
+
+    p {
+      line-height: 1.5;
     }
 
     a {

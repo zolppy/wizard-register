@@ -1,0 +1,12 @@
+@import "../../base/variables.scss";
+
+.app__description-container {
+  background-color: white;
+  padding: 1em;
+  border-radius: $border-radius;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  box-shadow: $box-shadow;
+  position: relative;
+}
