@@ -103,10 +103,22 @@ html body button:hover {
   outline: none;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
+  width: 100%;
 }
 .app__input:focus {
   border-bottom-width: 2px;
   border-bottom-color: #684382;
+}
+
+.app__radio-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.app__radio {
+  width: 20px;
+  aspect-ratio: 1/1;
 }
 
 .app__button {
