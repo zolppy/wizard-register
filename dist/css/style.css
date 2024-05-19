@@ -41,6 +41,10 @@ html body button:hover {
   cursor: pointer;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .p-relative {
   position: relative !important;
 }
