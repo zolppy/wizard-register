@@ -6,14 +6,17 @@
 @import "./module/app/app-header.scss";
 @import "./module/app/app-formContainer.scss";
 @import "./module/app/app-title.scss";
-@import "./module/app/app-requiredQuestion";
+@import "./module/app/app-requiredQuestion.scss";
 @import "./module/app/app-decoration.scss";
-@import "./module/app/app-question";
-@import "./module/app/app-requiredSymbol";
-@import "./module/app/app-input";
-@import "./module/app/app-radioWrapper";
-@import "./module/app/app-radio";
-@import "./module/app/app-radioLabel";
-@import "./module/app/app-textarea";
-
-@import "./module/app/app-button";
+@import "./module/app/app-question.scss";
+@import "./module/app/app-requiredSymbol.scss";
+@import "./module/app/app-input.scss";
+@import "./module/app/app-inputNumber.scss";
+@import "./module/app/app-checkWrapper.scss";
+@import "./module/app/app-check.scss";
+@import "./module/app/app-checkLabel.scss";
+@import "./module/app/app-radioWrapper.scss";
+@import "./module/app/app-radio.scss";
+@import "./module/app/app-radioLabel.scss";
+@import "./module/app/app-textarea.scss";
+@import "./module/app/app-button.scss";

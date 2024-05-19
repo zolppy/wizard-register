@@ -1,0 +1,16 @@
+@import "../../base/variables.scss";
+
+.app__input-number {
+  border: none;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 0.3em;
+  outline: none;
+  font-family: $roboto-font;
+  color: $text-color;
+  width: 10%;
+
+  &:focus {
+    border-bottom-width: 2px;
+    border-bottom-color: $main-color;
+  }
+}

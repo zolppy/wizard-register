@@ -9,7 +9,7 @@ html {
   font-size: 16px;
 }
 html body {
-  background-color: #d2c7da;
+  background-color: #cec1ee;
   color: #202124;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -87,7 +87,7 @@ html body button:hover {
 
 .app__decoration {
   position: absolute;
-  background-color: #684382;
+  background-color: #5c31c5;
   border-radius: 8px 8px 0 0;
   width: 100%;
   top: 0;
@@ -110,7 +110,32 @@ html body button:hover {
 }
 .app__input:focus {
   border-bottom-width: 2px;
-  border-bottom-color: #684382;
+  border-bottom-color: #5c31c5;
+}
+
+.app__input-number {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 0.3em;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  color: #202124;
+  width: 10%;
+}
+.app__input-number:focus {
+  border-bottom-width: 2px;
+  border-bottom-color: #5c31c5;
+}
+
+.app__check-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.app__check {
+  width: 20px;
+  aspect-ratio: 1/1;
 }
 
 .app__radio-wrapper {
@@ -135,11 +160,11 @@ html body button:hover {
 }
 .app__textarea:focus {
   border-width: 2px;
-  border-color: #684382;
+  border-color: #5c31c5;
 }
 
 .app__button {
-  background-color: #684382;
+  background-color: #5c31c5;
   align-self: flex-start;
   color: #fff;
   border-radius: 5px;
