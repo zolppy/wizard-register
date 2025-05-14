@@ -1,3 +1,3 @@
 # Wizard Register
 
-Registre-se como mago no reino de Eldoria! Junte-se ao Arquivo Real para desbloquear poderes, missões e recursos místicos exclusivos.
+Register as a mage in the kingdom of Eldoria! Join the Royal Archives to unlock exclusive mystical powers, quests, and resources.
