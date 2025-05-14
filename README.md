@@ -62,3 +62,7 @@ After that, open `http://localhost:3005` on a browser tab.
 
 ![01](https://github.com/user-attachments/assets/d60677ee-833d-44af-9814-01f6ff7f9932)
 ![02](https://github.com/user-attachments/assets/0b0f01f7-9f23-4dab-8a3c-c598387cb712)
+
+## Credits
+
+The page **design** was **inspired** by [Google Forms](https://docs.google.com/forms/u/0).
