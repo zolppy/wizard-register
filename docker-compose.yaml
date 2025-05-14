@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    container_name: wizard-register
+    ports:
+      - 3005:3005
