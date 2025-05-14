@@ -1,8 +1,8 @@
 enum Material {
-    WillowWood = "willowWood",
-    PhoenixCore = "phoenixCore",
-    RunicSteel = "runicSteel",
-    EtherealCrystal = "etherealCrystal",
+  WillowWood = "willowWood",
+  PhoenixCore = "phoenixCore",
+  RunicSteel = "runicSteel",
+  EtherealCrystal = "etherealCrystal",
 }
 
 export { Material };
