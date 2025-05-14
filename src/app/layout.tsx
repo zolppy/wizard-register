@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { roboto } from "@/utils/fonts";
+import { Main } from "@/app/components/Main";
+import { Section } from "@/app/components/Section";
 import "@/app/globals.css";
 
 export const metadata: Metadata = {
@@ -21,7 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${roboto.className} antialiased`}>{children}</body>
+      <body className={`${roboto.className} antialiased`}>
+        <Main>
+          <Section>{children}</Section>
+        </Main>
+      </body>
     </html>
   );
 }
