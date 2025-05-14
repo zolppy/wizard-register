@@ -1,1 +1,1 @@
-Wizard Registration
+# Wizard Register

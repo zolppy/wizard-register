@@ -1,17 +1,29 @@
 {
-  "name": "wizard-registration",
-  "version": "1.0.0",
-  "description": "Wizard Registration",
-  "main": "index.js",
+  "name": "wizard-register",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "next": "15.3.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.56.3",
+    "tailwind-merge": "^3.3.0"
+  },
   "devDependencies": {
-    "sass": "^1.77.1",
-    "uglify-js": "^3.17.4",
-    "uglifycss": "^0.0.29"
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
