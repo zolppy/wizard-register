@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { Main } from "@/app/components/Main";
 import { Section } from "@/app/components/Section";
 import { Form } from "@/app/components/Form";
@@ -27,6 +28,7 @@ import { Material } from "@/utils/enums/material";
 import { Artefact } from "@/utils/enums/artefact";
 
 export default function Home() {
+  const router = useRouter();
   const {
     formState: { errors },
     handleSubmit,
@@ -35,6 +37,7 @@ export default function Home() {
 
   function onSubmitForm(data: FieldValues) {
     console.log(data);
+    router.push("/finishing");
   }
 
   return (
@@ -67,7 +70,6 @@ export default function Home() {
                 Como você será conhecido nos anais da magia? (Ex: Zorathion
                 Fulgelunar)
               </P>
-              acentos)
               <InputWrapper>
                 <InputField
                   id="name"
