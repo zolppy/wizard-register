@@ -18,3 +18,13 @@ Register as a mage in the kingdom of Eldoria! Join the Royal Archives to unlock 
 - Consistent design;
 - Form;
 - Routing.
+
+## Technologies
+
+-   Next.js;
+-   Tailwind CSS;
+-   React.js;
+-   TypeScript;
+-   Docker;
+-   Jest;
+-   React Testing Library.
