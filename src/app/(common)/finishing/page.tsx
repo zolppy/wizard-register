@@ -1,7 +1,3 @@
-"use client";
-
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Container } from "@/app/components/Container";
 import { Ornament } from "@/app/components/Ornament";
@@ -10,15 +6,6 @@ import { P } from "@/app/components/P";
 import { bubblesImg } from "@/utils/data/images";
 
 export default function Finishing() {
-  const router = useRouter();
-
-  useEffect(() => {
-    const navigationState = window.history.state;
-    if (!navigationState?.fromApp) {
-      router.replace("/");
-    }
-  }, [router]);
-
   return (
     <>
       <Image
