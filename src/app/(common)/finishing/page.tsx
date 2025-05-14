@@ -15,7 +15,7 @@ export default function Finishing() {
   useEffect(() => {
     const navigationState = window.history.state;
     if (!navigationState?.fromApp) {
-      router.replace("/unauthorized");
+      router.replace("/");
     }
   }, [router]);
 
