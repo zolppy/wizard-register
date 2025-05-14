@@ -32,3 +32,28 @@ Register as a mage in the kingdom of Eldoria! Join the Royal Archives to unlock 
 ## Demo
 
 You can access the page [here](https://wizard-register.vercel.app).
+
+## How to run
+
+### By docker
+
+Run the following command on a console:
+
+```bash
+docker compose up -d
+```
+
+After some time, open `http://localhost:3005` on a browser tab.
+
+### By npm/yarn
+
+Run the following commands on a console:
+
+```bash
+git clone git@github.com:zolppy/wizard-register.git
+cd interior-design
+npm install # or "yarn"
+npm run dev # or "yarn dev"
+```
+
+After that, open `http://localhost:3005` on a browser tab.
