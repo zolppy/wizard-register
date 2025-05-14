@@ -1,7 +1,5 @@
-import { InputHTMLAttributes } from "react"; // Change import
+import { InputHTMLAttributes } from "react";
 import { ClassNameValue, twMerge } from "tailwind-merge";
-
-type inputType = "text" | "date" | "number" | "checkbox" | "radio" | "password";
 
 interface InputFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   className?: string;

@@ -41,7 +41,7 @@ export default function Finishing() {
             </P>
             <P>
               🔮 Dica: Verifique sua bolsa de mensagens místicas (e-mail) nas
-              próximas luas para confirmação!"
+              próximas luas para confirmação!
             </P>
           </Container>
         </Section>
