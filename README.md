@@ -11,3 +11,10 @@
 ![License](https://img.shields.io/badge/LICENSE-MIT-yellow?style=for-the-badge)
 
 Register as a mage in the kingdom of Eldoria! Join the Royal Archives to unlock exclusive mystical powers, quests, and resources.
+
+## Features
+
+- Responsive design;
+- Consistent design;
+- Form;
+- Routing.
