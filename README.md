@@ -28,3 +28,7 @@ Register as a mage in the kingdom of Eldoria! Join the Royal Archives to unlock 
 -   Docker;
 -   Jest;
 -   React Testing Library.
+
+## Demo
+
+You can access the page [here](https://wizard-register.vercel.app).
