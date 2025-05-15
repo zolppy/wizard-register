@@ -1,16 +1,13 @@
-import { ReactNode } from "react";
+import { ButtonHTMLAttributes, ReactNode } from "react";
 
-type BtnType = "button" | "reset" | "submit";
-
-interface BtnProps {
+interface BtnProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
-  type?: BtnType;
 }
 
-export function Btn({ children, type = "button" }: BtnProps) {
+export function Btn({ children, ...props }: BtnProps) {
   return (
     <button
-      type={type}
+      {...props}
       className="py-3 px-6 text-white bg-[#5c31c5] transition-opacity duration-200 w-fit rounded-[8px] lg:hover:cursor-pointer active:opacity-80 lg:hover:opacity-80"
     >
       {children}

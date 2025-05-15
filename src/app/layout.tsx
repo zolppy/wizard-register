@@ -6,9 +6,9 @@ import { roboto } from "@/utils/fonts";
 import "@/app/globals.css";
 
 export const metadata: Metadata = {
-  title: "Registro de Magos do Reino de Eldoria • Arquivo Real",
+  title: "Mage Registry of the Kingdom of Eldoria • Royal Archives",
   description:
-    "Registre-se como mago no reino de Eldoria! Junte-se ao Arquivo Real para desbloquear poderes, missões e recursos místicos exclusivos.",
+    "Register as a mage in the kingdom of Eldoria! Join the Royal Archives to unlock exclusive mystical powers, quests, and resources.",
   authors: [
     {
       name: "Gabriel Cavalcante de Jesus Oliveira",
@@ -23,13 +23,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
+    <html lang="en">
       <body className={`${roboto.className} antialiased`}>
         <Main>
           <Section>{children}</Section>
         </Main>
       </body>
-			<GoogleAnalytics gaId="G-V484E8ZZ00" />
+      <GoogleAnalytics gaId="G-V484E8ZZ00" />
     </html>
   );
 }

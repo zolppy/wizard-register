@@ -1,13 +1,12 @@
-import { ReactNode } from "react";
+import { LabelHTMLAttributes, ReactNode } from "react";
 
-interface InputLabelProps {
+interface InputLabelProps extends LabelHTMLAttributes<HTMLLabelElement> {
   children: ReactNode;
-  htmlFor: string;
 }
 
-export function InputLabel({ children, htmlFor }: InputLabelProps) {
+export function InputLabel({ children, ...props }: InputLabelProps) {
   return (
-    <label htmlFor={htmlFor} className="w-fit">
+    <label {...props} className="w-fit">
       {children}
     </label>
   );

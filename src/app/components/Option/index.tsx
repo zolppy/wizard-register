@@ -1,7 +1,7 @@
-import { HTMLAttributes, ReactNode } from "react";
+import { OptionHTMLAttributes, ReactNode } from "react";
 import { Specialty } from "@/utils/enums/specialty";
 
-interface OptionProps extends HTMLAttributes<HTMLOptionElement> {
+interface OptionProps extends OptionHTMLAttributes<HTMLOptionElement> {
   children: ReactNode;
   value?: Specialty | "";
 }

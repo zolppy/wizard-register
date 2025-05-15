@@ -49,40 +49,34 @@ export default function Home() {
         />
         <Container>
           <Ornament />
-          <H1>Registro Místico de Eldoria: Forje Seu Legado!</H1>
+          <H1>Mystical Record of Eldoria: Forge Your Legacy!</H1>
           <P>
-            Bem-vindo, aspirante a mago de Eldoria! Preencha este formulário
-            para se juntar ao Arquivo Real de Magos e garantir acesso a
-            grimoires secretos, torneios de feitiçaria e missões épicas. Suas
-            respostas moldarão seu destino no reino!
+            Welcome, aspiring mage of Eldoria! Fill out this form to join the
+            Royal Archive of Mages and gain access to secret grimoires,
+            sorcerous tournaments, and epic quests. Your answers will shape your
+            destiny in the realm!
           </P>
-          <WarningMessage>* Indica uma pergunta obrigatória</WarningMessage>
+          <WarningMessage>* Indicates a mandatory question.</WarningMessage>
         </Container>
         <Container>
           <InputLabel htmlFor="name">
-            01 - Nome Arcano Completo: <Star />
+            01 - Full Arcane Name: <Star />
           </InputLabel>
           <P>
-            Como você será conhecido nos anais da magia? (Ex: Zorathion
-            Fulgelunar)
+            What will you be known as in the annals of magic? (Ex: Zorathion
+            Fulgelunar).
           </P>
           <InputWrapper>
             <InputField
               id="name"
-              placeholder="Insira seu nome arcano..."
+              placeholder="Enter your arcane name..."
               {...register("name", {
-                required: "Nome arcano completo é obrigatório.",
-                minLength: {
-                  value: 3,
-                  message: "Mínimo 3 caracteres.",
-                },
-                maxLength: {
-                  value: 50,
-                  message: "Mínimo 50 caracteres.",
-                },
+                required: "Full arcane name is required.",
+                minLength: { value: 3, message: "Minimum 3 characters." },
+                maxLength: { value: 50, message: "Minimum 50 characters." },
                 pattern: {
                   value: /^[A-Za-zÀ-ÿ\s']+$/,
-                  message: "Formato inválido!",
+                  message: "Invalid format!",
                 },
               })}
             />
@@ -93,23 +87,23 @@ export default function Home() {
         </Container>
         <Container>
           <InputLabel htmlFor="specialty">
-            02 - Especialidade Mágica <Star />
+            02 - Magic Specialty: <Star />
           </InputLabel>
-          <P>Qual é seu domínio primário?</P>
+          <P>What is your primary domain?</P>
           <InputWrapper>
             <Select
               id="specialty"
               {...register("speciality", {
-                required: "Especialidade mágica é obrigatória.",
+                required: "Magic specialty is required.",
               })}
             >
-              <Option>Escolha</Option>
+              <Option>Choose</Option>
               <Option value={Specialty.Elemental}>Elemental</Option>
-              <Option value={Specialty.Necromancy}>Necromancia</Option>
-              <Option value={Specialty.Illusionism}>Ilusionismo</Option>
-              <Option value={Specialty.Healing}>Cura</Option>
-              <Option value={Specialty.Divination}>Adivinhação</Option>
-              <Option value={Specialty.Enchantment}>Encantamento</Option>
+              <Option value={Specialty.Necromancy}>Necromancy</Option>
+              <Option value={Specialty.Illusionism}>Illusionism</Option>
+              <Option value={Specialty.Healing}>Healing</Option>
+              <Option value={Specialty.Divination}>Divination</Option>
+              <Option value={Specialty.Enchantment}>Enchantment</Option>
             </Select>
             {errors.speciality && (
               <WarningMessage>
@@ -120,23 +114,20 @@ export default function Home() {
         </Container>
         <Container>
           <InputLabel htmlFor="date">
-            03 - Data de Despertar Mágico <Star />
+            03 - Magical Awakening Date: <Star />
           </InputLabel>
-          <P>Quando sua magia despertou pela primeira vez?</P>
+          <P>When did your magic first awaken?</P>
           <InputWrapper>
             <InputField
               id="date"
               type="date"
               className="w-fit"
               {...register("date", {
-                required: "Data de despertar mágico é obrigatória.",
-                min: {
-                  value: "1900-01-01",
-                  message: "Mínimo é 01/01/1900.",
-                },
+                required: "Magical awakening date is required.",
+                min: { value: "1900-01-01", message: "Minimum 01/01/1900." },
                 max: {
                   value: getCurrentDate(),
-                  message: "Data não pode ser superior à atual.",
+                  message: "Date cannot be greater than the current date.",
                 },
               })}
             />
@@ -147,25 +138,19 @@ export default function Home() {
         </Container>
         <Container>
           <InputLabel htmlFor="power">
-            04 - Nível de Poder Arcano (1-100) <Star />
+            04 - Arcane Power Level (1-100): <Star />
           </InputLabel>
-          <P>Avalie sua força mágica atual.</P>
+          <P>Assess your current magical strength.</P>
           <InputWrapper>
             <InputField
               id="power"
               type="number"
-              placeholder="Ex: 75"
+              placeholder="Ex: 75."
               className="w-fit"
               {...register("power", {
-                required: "Nível de poder arcano é obrigatório.",
-                min: {
-                  value: 1,
-                  message: "Mínimo 1.",
-                },
-                max: {
-                  value: 100,
-                  message: "Máximo 100.",
-                },
+                required: "Arcane power level is required.",
+                min: { value: 1, message: "Minimum 1." },
+                max: { value: 100, message: "Maximum 100." },
               })}
             />
             {errors.power && (
@@ -174,21 +159,15 @@ export default function Home() {
           </InputWrapper>
         </Container>
         <Container>
-          <InputLabel htmlFor="relative">05 - Familiar Mágico</InputLabel>
-          <P>Nome do seu companheiro místico (corvo, gato, dragão...)</P>
+          <InputLabel htmlFor="relative">05 - Magical Familiar:</InputLabel>
+          <P>Name of your mystical companion (crow, cat, dragon...).</P>
           <InputWrapper>
             <InputField
               id="relative"
-              placeholder="Ex: Ígneo, o Corvo de Obsidiana"
+              placeholder="Ex: Igneous, the Obsidian Raven."
               {...register("relative", {
-                maxLength: {
-                  value: 50,
-                  message: "Máximo 50 caracteres.",
-                },
-                pattern: {
-                  value: /^[A-Za-z\s]+$/,
-                  message: "Formato inválido!",
-                },
+                maxLength: { value: 50, message: "Maximum 50 characters." },
+                pattern: { value: /^[A-Za-z\s]+$/, message: "Invalid format!" },
               })}
             />
             {errors.relative && (
@@ -200,9 +179,9 @@ export default function Home() {
         </Container>
         <Container>
           <P>
-            06 - Material da Varinha <Star />{" "}
+            06 - Wand Material: <Star />
           </P>
-          <P>Selecione os materiais de sua varinha (múltipla escolha):</P>
+          <P>Select your wand materials.</P>
           <InputWrapper>
             <CheckContainer>
               <CheckWrapper>
@@ -211,11 +190,11 @@ export default function Home() {
                   type="checkbox"
                   defaultValue={Material.WillowWood}
                   {...register("material", {
-                    required: "Escolha pelo menos um",
+                    required: "Choose at least one.",
                   })}
                 />
                 <InputLabel htmlFor={Material.WillowWood}>
-                  Madeira de Salgueiro
+                  Willow Wood
                 </InputLabel>
               </CheckWrapper>
               <CheckWrapper>
@@ -224,11 +203,11 @@ export default function Home() {
                   type="checkbox"
                   defaultValue={Material.PhoenixCore}
                   {...register("material", {
-                    required: "Escolha pelo menos um",
+                    required: "Choose at least one.",
                   })}
                 />
                 <InputLabel htmlFor={Material.PhoenixCore}>
-                  Núcleo de Fênix
+                  Phoenix Core
                 </InputLabel>
               </CheckWrapper>
               <CheckWrapper>
@@ -237,11 +216,11 @@ export default function Home() {
                   type="checkbox"
                   defaultValue={Material.RunicSteel}
                   {...register("material", {
-                    required: "Escolha pelo menos um",
+                    required: "Choose at least one.",
                   })}
                 />
                 <InputLabel htmlFor={Material.RunicSteel}>
-                  Aço Rúnico
+                  Runic Steel
                 </InputLabel>
               </CheckWrapper>
               <CheckWrapper>
@@ -250,11 +229,11 @@ export default function Home() {
                   type="checkbox"
                   defaultValue={Material.EtherealCrystal}
                   {...register("material", {
-                    required: "Escolha pelo menos um",
+                    required: "Choose at least one.",
                   })}
                 />
                 <InputLabel htmlFor={Material.EtherealCrystal}>
-                  Cristal Etéreo
+                  Ethereal Crystal
                 </InputLabel>
               </CheckWrapper>
             </CheckContainer>
@@ -267,19 +246,16 @@ export default function Home() {
         </Container>
         <Container>
           <InputLabel htmlFor="spell">
-            07 - Feitiço de Assinatura <Star />
+            07 - Signature Spell: <Star />
           </InputLabel>
-          <P>Descreva seu feitiço único (máx. 200 caracteres).</P>
+          <P>Describe your unique spell (max 200 characters).</P>
           <InputWrapper>
             <TextArea
               id="spell"
-              placeholder="Ex: Tempestade de Estrelas Cadentes"
+              placeholder="Ex: Storm of Shooting Stars."
               {...register("spell", {
-                required: "Feitiço de assinatura é obrigatório.",
-                maxLength: {
-                  value: 200,
-                  message: "Máximo 200 caracteres.",
-                },
+                required: "Signature spell is required.",
+                maxLength: { value: 200, message: "Maximum 200 characters." },
               })}
             />
             {errors.spell && (
@@ -289,9 +265,9 @@ export default function Home() {
         </Container>
         <Container>
           <P>
-            08 - Artefato Místico Possuído <Star />
+            08 - Possessed Mystical Artifact: <Star />
           </P>
-          <P>Qual artefato você carrega?</P>
+          <P>What artifact do you carry?</P>
           <InputWrapper>
             <CheckContainer>
               <CheckWrapper>
@@ -300,12 +276,10 @@ export default function Home() {
                   type="radio"
                   defaultValue={Artefact.DepthOrb}
                   {...register("artefact", {
-                    required: "Artefato místico possuído é obrigatório.",
+                    required: "Possessed mystical artifact is required.",
                   })}
                 />
-                <InputLabel htmlFor={Artefact.DepthOrb}>
-                  Orbe da Profundezas
-                </InputLabel>
+                <InputLabel htmlFor={Artefact.DepthOrb}>Depth Orb</InputLabel>
               </CheckWrapper>
               <CheckWrapper>
                 <InputField
@@ -313,11 +287,11 @@ export default function Home() {
                   type="radio"
                   defaultValue={Artefact.LostSoulBook}
                   {...register("artefact", {
-                    required: "Artefato místico possuído é obrigatório.",
+                    required: "Possessed mystical artifact is required.",
                   })}
                 />
                 <InputLabel htmlFor={Artefact.LostSoulBook}>
-                  Livro das Almas Perdidas
+                  Lost Soul Book
                 </InputLabel>
               </CheckWrapper>
               <CheckWrapper>
@@ -326,11 +300,11 @@ export default function Home() {
                   type="radio"
                   defaultValue={Artefact.EclipseAmulet}
                   {...register("artefact", {
-                    required: "Artefato místico possuído é obrigatório.",
+                    required: "Possessed mystical artifact is required.",
                   })}
                 />
                 <InputLabel htmlFor={Artefact.EclipseAmulet}>
-                  Amuleto do Eclipse
+                  Eclipse Amulet
                 </InputLabel>
               </CheckWrapper>
               <CheckWrapper>
@@ -339,10 +313,10 @@ export default function Home() {
                   type="radio"
                   defaultValue={Artefact.None}
                   {...register("artefact", {
-                    required: "Artefato místico possuído é obrigatório.",
+                    required: "Possessed mystical artifact is required.",
                   })}
                 />
-                <InputLabel htmlFor={Artefact.None}>Nenhum</InputLabel>
+                <InputLabel htmlFor={Artefact.None}>None</InputLabel>
               </CheckWrapper>
             </CheckContainer>
             {errors.artefact && (
@@ -353,24 +327,22 @@ export default function Home() {
           </InputWrapper>
         </Container>
         <Container>
-          <InputLabel htmlFor="">
-            09 - Senha Secreta do Portal <Star />
+          <InputLabel htmlFor="password">
+            09 - Secret Portal Password: <Star />
           </InputLabel>
-          <P>Crie uma senha para acessar portais místicos.</P>
+          <P>Create a password to access mystical portals.</P>
           <InputWrapper>
             <InputField
+              id="password"
               type="password"
               placeholder="********"
               className="w-fit"
               {...register("password", {
-                required: "Senha secreta do portal é obrigatória.",
-                minLength: {
-                  value: 8,
-                  message: "Mínimo 8 caracteres.",
-                },
+                required: "Secret portal password is required.",
+                minLength: { value: 8, message: "Minimum 8 characters." },
                 pattern: {
                   value: /^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9]).{8,}$/,
-                  message: "A senha deve ser forte.",
+                  message: "The password must be strong.",
                 },
               })}
             />
@@ -383,9 +355,9 @@ export default function Home() {
         </Container>
         <Container>
           <P>
-            10 - Juramento à Ordem dos Magos <Star />
+            10 - Oath to the Order of Magi <Star />
           </P>
-          <P>Promete honrar o código de conduta mágica?</P>
+          <P>Do you promise to honor the magical code of conduct?</P>
           <InputWrapper>
             <CheckContainer>
               <CheckWrapper>
@@ -394,10 +366,10 @@ export default function Home() {
                   type="checkbox"
                   defaultValue="Yes"
                   {...register("oath", {
-                    required: "Juramento à ordem dos magos é obrigatório.",
+                    required: "Oath to the order of wizards is required.",
                   })}
                 />
-                <InputLabel htmlFor="oath">Sim, juro solenemente.</InputLabel>
+                <InputLabel htmlFor="oath">Yes, I solemnly swear.</InputLabel>
               </CheckWrapper>
             </CheckContainer>
             {errors.oath && (
@@ -405,7 +377,7 @@ export default function Home() {
             )}
           </InputWrapper>
         </Container>
-        <Btn type="submit">Enviar</Btn>
+        <Btn type="submit">Send</Btn>
       </Form>
     </>
   );
