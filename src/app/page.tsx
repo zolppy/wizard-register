@@ -42,6 +42,7 @@ export default function Home() {
     <>
       <Form onSubmit={handleSubmit(onSubmitForm)}>
         <Image
+          priority={true}
           src={bubblesImg.src}
           title={bubblesImg.title}
           alt={bubblesImg.alt}
