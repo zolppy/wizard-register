@@ -3,6 +3,7 @@ import { ClassNameValue, twMerge } from "tailwind-merge";
 
 export function InputField({
   className = "",
+  type = "text",
   ...props
 }: InputHTMLAttributes<HTMLInputElement>) {
   const baseStyles =
@@ -11,6 +12,7 @@ export function InputField({
   return (
     <input
       {...props}
+      type={type}
       className={twMerge(baseStyles, className as ClassNameValue)}
     />
   );
