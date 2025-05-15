@@ -56,7 +56,7 @@ export default function Home() {
             sorcerous tournaments, and epic quests. Your answers will shape your
             destiny in the realm!
           </P>
-          <WarningMessage>* Indicates a mandatory question.</WarningMessage>
+          <WarningMessage>* Indicates a required question.</WarningMessage>
         </Container>
         <Container>
           <InputLabel htmlFor="name">
@@ -188,7 +188,7 @@ export default function Home() {
                 <InputField
                   id={Material.WillowWood}
                   type="checkbox"
-                  defaultValue={Material.WillowWood}
+                  value={Material.WillowWood}
                   {...register("material", {
                     required: "Choose at least one.",
                   })}
@@ -201,7 +201,7 @@ export default function Home() {
                 <InputField
                   id={Material.PhoenixCore}
                   type="checkbox"
-                  defaultValue={Material.PhoenixCore}
+                  value={Material.PhoenixCore}
                   {...register("material", {
                     required: "Choose at least one.",
                   })}
@@ -214,7 +214,7 @@ export default function Home() {
                 <InputField
                   id={Material.RunicSteel}
                   type="checkbox"
-                  defaultValue={Material.RunicSteel}
+                  value={Material.RunicSteel}
                   {...register("material", {
                     required: "Choose at least one.",
                   })}
@@ -227,7 +227,7 @@ export default function Home() {
                 <InputField
                   id={Material.EtherealCrystal}
                   type="checkbox"
-                  defaultValue={Material.EtherealCrystal}
+                  value={Material.EtherealCrystal}
                   {...register("material", {
                     required: "Choose at least one.",
                   })}
@@ -274,7 +274,7 @@ export default function Home() {
                 <InputField
                   id={Artefact.DepthOrb}
                   type="radio"
-                  defaultValue={Artefact.DepthOrb}
+                  value={Artefact.DepthOrb}
                   {...register("artefact", {
                     required: "Possessed mystical artifact is required.",
                   })}
@@ -285,7 +285,7 @@ export default function Home() {
                 <InputField
                   id={Artefact.LostSoulBook}
                   type="radio"
-                  defaultValue={Artefact.LostSoulBook}
+                  value={Artefact.LostSoulBook}
                   {...register("artefact", {
                     required: "Possessed mystical artifact is required.",
                   })}
@@ -298,7 +298,7 @@ export default function Home() {
                 <InputField
                   id={Artefact.EclipseAmulet}
                   type="radio"
-                  defaultValue={Artefact.EclipseAmulet}
+                  value={Artefact.EclipseAmulet}
                   {...register("artefact", {
                     required: "Possessed mystical artifact is required.",
                   })}
@@ -311,7 +311,7 @@ export default function Home() {
                 <InputField
                   id={Artefact.None}
                   type="radio"
-                  defaultValue={Artefact.None}
+                  value={Artefact.None}
                   {...register("artefact", {
                     required: "Possessed mystical artifact is required.",
                   })}
@@ -364,7 +364,7 @@ export default function Home() {
                 <InputField
                   id="oath"
                   type="checkbox"
-                  defaultValue="Yes"
+                  value="Yes"
                   {...register("oath", {
                     required: "Oath to the order of wizards is required.",
                   })}
