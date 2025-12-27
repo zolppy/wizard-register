@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import { Main } from "@/app/components/Main";
 import { Section } from "@/app/components/Section";
 import { roboto } from "@/utils/fonts";
@@ -29,7 +28,6 @@ export default function RootLayout({
           <Section>{children}</Section>
         </Main>
       </body>
-      <GoogleAnalytics gaId="G-V484E8ZZ00" />
     </html>
   );
 }
